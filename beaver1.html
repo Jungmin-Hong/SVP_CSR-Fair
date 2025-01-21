@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D조 희망디딤돌</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script>
+        $(function(){
+          $("#shot").on("click", function(){
+                  // 캡쳐 라이브러리를 통해서 canvas 오브젝트를 받고 이미지 파일로 리턴한다.
+            html2canvas(document.querySelector("#capture")).then(canvas => {
+                      saveAs(canvas.toDataURL('image/png'),"capture-test.png");
+                  });
+          });
+          function saveAs(uri, filename) { 
+                  // 캡쳐된 파일을 이미지 파일로 내보낸다.
+            var link = document.createElement('a'); 
+            if (typeof link.download === 'string') { 
+              link.href = uri; 
+              link.download = filename; 
+              document.body.appendChild(link); 
+              link.click(); 
+              document.body.removeChild(link); 
+            } else { 
+              window.open(uri); 
+            } 
+          }
+        });
+      </script>
 </head>
 <body>
     <main class="main">
@@ -16,6 +40,7 @@
             <img src="src/beaver1.jpeg" alt="Example Image" class="image">
             <p class="text">희망디딤돌 2.0의 <span class="colorchange">조리 직무 교육</span>을 수강하여 <span class="colorchange">요리왕조리왕 비버</span>로 자립에 성공하신 당신!<br>
                             축하합니다! 지금까지의 모든 빚은 탕감되었으니 앞으로 더 멋지게 사세요!</p>
+                            <button class="button" onclick="captureScreen()">화면 캡쳐</button>
                             <a href="https://www.jarip-hope.or.kr/main/main.php" class="button">희망디딤돌 더 알아보기</a>
         </div>
         <!-- <a href="https://www.jarip-hope.or.kr/main/main.php" class="button">희망디딤돌 더 알아보기</a> -->
