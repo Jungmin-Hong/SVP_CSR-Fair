@@ -14,7 +14,7 @@ body {
 
 .header {
     text-align: center;
-    color: #00008b;
+    color: #1428A0;
     padding: 20px 10px 2px;
     margin-bottom: 15px;
     border-radius: 8px;
@@ -25,7 +25,7 @@ body {
 }
 .header h2 {
     font-size: 17px;
-    color: #000;
+    color: #787878;
 }
 
 .main {
@@ -55,7 +55,7 @@ body {
 
 .text {
     font-size: 15px;
-    color: #3d3d3d;
+    color: #333333;
     padding: 2%;
     line-height: 1.6;
     margin-bottom: 15px;
@@ -63,7 +63,28 @@ body {
 
 a.button {
     display: inline-block;
-    background-color: #00b3e3;
+    background-color: #6E7DD9;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    max-width: 350px;
+    width: 100%;
+    margin-bottom: 17px;
+}
+
+a.button:hover {
+    background-color: #1428A0;
+}
+
+.button1 {
+    display: inline-block;
+    background-color: #6E7DD9;
+    border-color: #6E7DD9;
     text-align: center;
     color: white;
     text-decoration: none;
@@ -75,18 +96,34 @@ a.button {
     max-width: 350px;
     width: 100%;
     margin-bottom: 17px;
-    /* height: 30px; */
 }
 
-a.button:hover {
-    background-color: #00252f;
+.button1:hover {
+    background-color: #1428A0;
 }
 
-a.button:active {
-    background-color: #00252f;
+
+.button2 {
+    display: inline-block;
+    background-color: #787878;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    max-width: 350px;
+    width: 100%;
+    margin-bottom: 17px;
+}
+
+.button2:hover {
+    background-color: #333333;
 }
 
 span.colorchange {
-    color: #00008b;
+    color: #1428A0;
     font-weight: bold;
 }

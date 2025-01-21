@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D조 희망디딤돌</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script>
+        function captureScreen() {
+            const captureElement = document.querySelector(".container");
+            html2canvas(captureElement).then(canvas => {
+                const link = document.createElement('a');
+                link.href = canvas.toDataURL('image/png');
+                link.download = 'beaver.png';
+                link.click();
+            }).catch(error => {
+                console.error("캡쳐 함수 오류: ", error);
+            });
+        }
+    </script>
 </head>
 <body>
     <main class="main">
@@ -14,11 +28,12 @@
                 <h1>네트워크엔지니어 비버</h1>
             </header>
             <img src="src/beaver7.jpeg" alt="Example Image" class="image">
-            <p class="text">희망디딤돌 2.0의 <span class="colorchange">조리 직무 교육</span>을 수강하여 <span class="colorchange">요리왕조리왕 비버</span>로 자립에 성공하신 당신!<br>
+            <p class="text">희망디딤돌 2.0의 <span class="colorchange">네트워크 직무 교육</span>을 수강하여 
+                <span class="colorchange">요리왕조리왕 비버</span>로 자립에 성공하신 당신!<br>
                             축하합니다! 지금까지의 모든 빚은 탕감되었으니 앞으로 더 멋지게 사세요!</p>
+                            <button class="button1" onclick="captureScreen()">내 비버 저장하기</button>
                             <a href="https://www.jarip-hope.or.kr/main/main.php" class="button">희망디딤돌 더 알아보기</a>
         </div>
-        <!-- <a href="https://www.jarip-hope.or.kr/main/main.php" class="button">희망디딤돌 더 알아보기</a> -->
     </main>
 </body>
 </html>
