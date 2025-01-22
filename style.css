@@ -113,6 +113,7 @@ a.button:active{
 .button2 {
     display: inline-block;
     background-color: #787878;
+    border-color: #787878;
     text-align: center;
     color: white;
     text-decoration: none;
@@ -123,7 +124,7 @@ a.button:active{
     transition: background-color 0.3s ease, transform 0.2s ease;
     max-width: 350px;
     width: 100%;
-    margin-bottom: 17px;
+    margin-bottom: 7px;
 }
 
 .button2:hover {
