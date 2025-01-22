@@ -88,11 +88,11 @@ a.button:active{
 .button1 {
     display: inline-block;
     background-color: #6E7DD9;
-    border-color: #6E7DD9;
+    border: none;
     text-align: center;
     color: white;
     text-decoration: none;
-    padding: 12px 20px;
+    padding: 10px 12px 20px;
     font-size: 16px;
     border-radius: 13px;
     cursor: pointer;
@@ -100,6 +100,7 @@ a.button:active{
     max-width: 350px;
     width: 100%;
     margin-bottom: 7px;
+    height: 45px;
 }
 
 .button1:hover {
@@ -113,11 +114,11 @@ a.button:active{
 .button2 {
     display: inline-block;
     background-color: #787878;
-    border-color: #787878;
+    border: none;
     text-align: center;
     color: white;
     text-decoration: none;
-    padding: 12px 20px;
+    padding: 10px 12px 20px;
     font-size: 16px;
     border-radius: 13px;
     cursor: pointer;
@@ -125,6 +126,7 @@ a.button:active{
     max-width: 350px;
     width: 100%;
     margin-bottom: 7px;
+    height: 45px;
 }
 
 .button2:hover {
@@ -132,6 +134,32 @@ a.button:active{
 }
 
 .button2:active {
+    background-color: #787878;
+}
+
+.button3 {
+    display: inline-block;
+    background-color: #787878;
+    border: none;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 13px 12px 20px;
+    font-size: 16px;
+    border-radius: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    max-width: 350px;
+    width: 100%;
+    margin-bottom: 7px;
+    height: 45px;
+}
+
+.button3:hover {
+    background-color: #333333;
+}
+
+.button3:active {
     background-color: #787878;
 }
 
